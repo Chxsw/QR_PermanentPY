@@ -1,3 +1,4 @@
+print("Test Version | Static Code -V")
 # Imports
 import qrcode
 import os

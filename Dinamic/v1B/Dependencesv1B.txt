@@ -1,0 +1,10 @@
+--------------Script BD------------------
+
+create database qrtest02;
+use qrtest02;
+CREATE TABLE IF NOT EXISTS enlaces_qrV2 (
+    id_unico VARCHAR(50) PRIMARY KEY, 
+    alias_proyecto VARCHAR(100),      
+    url_destino TEXT NOT NULL,        
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

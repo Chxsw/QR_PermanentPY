@@ -1,0 +1,12 @@
+pip install mysql-connector-python
+pip install flask
+
+--------------Script BD------------------
+create database qrtest;
+use qrtest;
+
+CREATE TABLE IF NOT EXISTS enlaces_qr (
+    id_unico VARCHAR(50) PRIMARY KEY,
+    url_destino TEXT NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
